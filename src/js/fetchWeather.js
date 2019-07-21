@@ -8,8 +8,8 @@ const fetchWeather = query => {
   
     const requestParams = `?key=${options.apiKey}&q=${query}`;
   
-    return fetch(options.baseUrl + requestParams).then(responce =>
-      responce.json(),
+    return fetch(options.baseUrl + requestParams).then(response =>
+      response.json(),
     );
   };
   
